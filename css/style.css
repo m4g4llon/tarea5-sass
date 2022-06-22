@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0; }
 
+grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.15fr 1fr 1fr 1fr 1fr 0.3fr 0.15fr;
+  gap: 0px 0px;
+  font-family: sans-serif;
+  background-color: beige;
+  grid-template-areas: "header header header header" "seccion1 seccion1 seccion1 seccion1" "seccion1 seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2 seccion2" "seccion2 seccion2 seccion2 seccion2" "suscripcion suscripcion suscripcion suscripcion" "footer footer footer footer"; }
+
 header {
   grid-area: header;
   display: flex;
@@ -10,48 +19,41 @@ header {
   max-height: 10vh;
   justify-content: center;
   align-items: center; }
-  header ul {
-    display: flex; }
-    header ul li {
-      list-style: none;
-      padding: 1rem; }
-      header ul li:active {
-        color: red; }
-  header img {
+  header a img {
     width: 150px;
     height: auto; }
+  header ul {
+    display: flex;
+    width: 100%; }
+    header ul li {
+      list-style: none;
+      padding: 20px;
+      height: auto;
+      text-align: center;
+      width: 100%; }
+      header ul lihover {
+        background-color: #6990c0;
+        border-radius: 20px;
+        font-size: 110%; }
 
-h1 {
-  color: blue;
-  /* Selector de tipo ID */ }
-  h1 .titulo {
-    color: #3fa436; }
-  h1 #comidas {
-    color: #353093; }
-
-grilla {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.15fr 1fr 1fr 1fr 1fr 0.3fr 0.15fr;
-  gap: 0px 0px;
-  font-family: sans-serif;
-  background-color: beige;
-  grid-template-areas: "header header header header" "seccion1 seccion1 seccion1 seccion1" "seccion1 seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2 seccion2" "seccion2 seccion2 seccion2 seccion2" "suscripcion suscripcion suscripcion suscripcion" "footer footer footer footer"; }
-
-/* Selector de tipo clase */
-.negrita {
-  color: black;
-  background-color: white;
-  font-style: italic; }
-
-.letraGrandeOscura {
-  color: black;
-  font-size: 150%;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-
-/*
-letraGrandeOscura => camelCase
-letra_grande_oscura => snake_case
-letra-grande-oscura => kebab-case
-*/
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  background-color: #d2eced;
+  max-height: 10vh;
+  justify-content: center;
+  align-items: center; }
+  footer ul {
+    display: flex;
+    width: 100%; }
+    footer ul li {
+      list-style: none;
+      padding: 20px;
+      height: auto;
+      text-align: center;
+      width: 100%; }
+      footer ul lihover {
+        background-color: #6990c0;
+        border-radius: 20px;
+        font-size: 110%; }
