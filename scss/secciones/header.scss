@@ -1,0 +1,35 @@
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(210, 236, 237);
+    max-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    ul{
+        display: flex;
+        li{
+           list-style: none;
+           padding: 1rem;
+           &:active{
+            color: red;
+           }
+        }
+    }
+    img{
+        width: 150px;
+        height: auto;
+    }
+}
+
+h1{
+    color:blue;
+    .titulo{
+        color:rgb(63, 164, 54);
+    }
+    /* Selector de tipo ID */
+    #comidas{
+        color: #353093;
+    }
+}
+

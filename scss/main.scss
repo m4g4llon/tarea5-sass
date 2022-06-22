@@ -1,0 +1,38 @@
+//RESET
+*{
+    margin: 0;
+    padding: 0;
+}
+// IMPORT
+@import './secciones/grilla.scss';
+@import './secciones/header.scss';
+
+
+
+
+
+
+
+
+
+/* Selector de tipo clase */
+// .negrita{
+    color: black;
+    background-color: white;
+    font-style: italic;
+// }
+
+// .letraGrandeOscura{
+    color: black;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+// }
+
+/*
+letraGrandeOscura => camelCase
+letra_grande_oscura => snake_case
+letra-grande-oscura => kebab-case
+*/
+
+
